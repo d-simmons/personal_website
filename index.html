@@ -7,7 +7,7 @@
     <style>
         /* Add CSS styles here */
         body {
-            font-family: Arial, sans-serif;
+            font-family: Courier New, monospace;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -19,6 +19,7 @@
             text-align: center;
         }
         main {
+            background-color: antiquewhite;
             padding: 20px;
         }
         footer {
@@ -52,6 +53,18 @@
             margin-right: auto;
             text-align: center;
         }
+        h3 {
+            text-align: center;
+        }
+        #container {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #container p {
+            margin-left: 1em;
+        }
     </style>
 </head>
 <body>
@@ -61,12 +74,18 @@
     </header>
     <main>
         <!-- Picture Section -->
-        <p>
-            <img src="IMG_1040.jpeg" alt="Description of your picture">
-        </p>
+        <div id='container'>
+            <img src='IMG_1040.jpeg'
+                 style='float: left;'
+                 width="500"
+                 height="1000"/>
+            <p>Hi, my name is David Simmons and I am a junior at the University of Notre Dame. This is a website I created to
+            showcase some of the coding projects and games I have created during my time at Notre Dame.</p>
+        </div>
         <header>
             <h2>Projects and Coursework</h2>
         </header>
+        <p><h3>Python Data Analysis of HOR Stock Trades</h3></p>
         <p>
             <iframe
             id="inlineFrameExample"
@@ -76,6 +95,8 @@
             src="https://d-simmons.github.io/Engineering_Computing_Final_Piechota_Simmons/">
             </iframe>
         </p>
+        <p>This website was created by myself and a classmate to demonstrate data processing and visualization using python.
+        The specifics of what each visualization is and the insights we gained are further explained in the website itself.</p>
     </main>
     <footer>
         <!-- Links Section -->
